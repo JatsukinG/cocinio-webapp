@@ -21,7 +21,7 @@ const LoginForm = () => {
   return (
       <form
           onSubmit={onSubmit}
-          className="relative w-full bg-white rounded-xl p-8 pt-12 flex flex-col items-center gap-4"
+          className="relative w-full bg-white rounded-xl p-8 pt-12 flex flex-col items-center gap-4 shadow-lg"
       >
         <h1 className="mb-4 text-gray-700 font-bold text-xl">Ingresar</h1>
         {/*TODO Create FormField component*/}

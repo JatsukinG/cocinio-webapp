@@ -1,14 +1,14 @@
 import clsx from 'clsx'
 import { FaLock, FaUser } from 'react-icons/fa'
 import { Button, Input, Text } from '@components'
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const LoginForm = () => {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: FormEvent) => {
     console.log('Submit')
     e.preventDefault()
     setLoading(true)

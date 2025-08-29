@@ -3,7 +3,7 @@ import type { IconType } from 'react-icons'
 import clsx from 'clsx'
 import { Input as HUInput } from '@headlessui/react'
 
-interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'className'> {
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
   icon?: IconType
 }
 

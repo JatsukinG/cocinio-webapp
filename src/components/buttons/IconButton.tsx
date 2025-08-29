@@ -8,10 +8,9 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   outlined?: boolean
 }
 
-const IconButton = ({ children, isLoading, outlined, icon: Icon, className, ...rest }: Props) => {
+const IconButton = ({ children, outlined, icon: Icon, className, ...rest }: Props) => {
   return (
       <HUButton
-          disabled={isLoading}
           className={clsx([
             'w-10 h-10 shrink-0 text-xl rounded-lg shadow-indigo-20 duration-300 grid place-items-center',
             outlined ? 'text-gray-500 bg-white border border-gray-200' : 'text-white bg-gradient-to-b from-violet-500 to-indigo-500',
